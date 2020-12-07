@@ -1,16 +1,18 @@
 <!-- Stored in resources/views/child.blade.php -->
 
-@extends('layouts.app')
+{{--@extends('layouts.app')--}}
 
-@section('title', 'Page Title')
+{{--@section('title', 'Page Title')--}}
 
-@section('sidebar')
-    @parent
+{{--@section('sidebar')--}}
+{{--    @parent--}}
 
-    <p>This is appended to the master sidebar!!!</p>
-@endsection
+{{--    <p>This is appended to the master sidebar!!!</p>--}}
+{{--@endsection--}}
 
-@section('content')
-    <p>This is my body content!!!!!</p>
-@endsection
+{{--@section('content')--}}
+{{--    <p>This is my body content!!!!!</p>--}}
+{{--@endsection--}}
+
+@extends('layouts.base')
 

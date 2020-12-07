@@ -10,7 +10,7 @@
         'protectSubmit' => '0',
         'submitLimit' => '0',
         'rules' => [
-            "name" => [
+             "name" => [
                 "required" => "Enter your name"
             ],
             "email" => [

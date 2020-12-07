@@ -8,7 +8,7 @@
         <title>{{ $meta['title'] }}</title>
     </head>
     <body>
-    @section('header')
+{{--    @section('header')--}}
         <h2>Menu</h2>
         <ul>
             @foreach($topmenu as $item)
@@ -25,7 +25,10 @@
             @endforeach
         </ul>
 
+        @yield('content')
+
         @stack('scripts')
+
 
 
     </body>
