@@ -1,6 +1,17 @@
 @extends('layouts.base')
 
+@section('title', 'Page Title')
+
+@section('nav')
+    <ul class="nav">
+        <li>home</li>
+        <li>item_1</li>
+        <li>item_2</li>
+    </ul>
+@endsection
+
 @section('content')
+
     <h2>FormLister</h2>
 
     {!! $modx->runSnippet('FormLister', array(
