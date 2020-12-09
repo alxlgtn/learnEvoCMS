@@ -1,12 +1,13 @@
 @extends('layouts.base')
 
+
 @section('content')
     <h2>FormLister</h2>
 
     {!! $modx->runSnippet('FormLister', array(
         'formid' => 'ContactForm',
         'to' => 'muteproj@gmail.com',
-        'subject' => 'Message from Ligas FormLister EvoCMS',
+        'subject' => 'Отзыв с сайта',
         'protectSubmit' => '0',
         'submitLimit' => '0',
         'rules' => [
