@@ -1,6 +1,5 @@
 @extends('layouts.base')
 
-
 @section('content')
     <h2>FormLister</h2>
 
@@ -25,9 +24,8 @@
                 "required" => "Enter message"
             ]
         ],
-        'successTpl' => '@B_FILE:partials/form/successTpl',
-        'formTpl' =>  '@B_FILE:partials/form/ContactForm',
-        'reportTpl' =>  '@B_FILE:partials/form/ContactFormReport'
+        'successTpl' => '@B_FILE:partials/formFeedback/successTpl',
+        'formTpl' =>  '@B_FILE:partials/formFeedback/ContactForm',
+        'reportTpl' =>  '@B_FILE:partials/formFeedback/ContactFormReport'
     )); !!}
-
 @endsection

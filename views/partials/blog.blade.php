@@ -1,1 +1,0 @@
-<h1>blog.blade.php</h1>

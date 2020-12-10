@@ -1,17 +1,11 @@
 <form method="post">
     <fieldset class="uk-fieldset">
-        <h2>Оставить отзыв</h2>
+        <h3>Оставить отзыв</h3>
 
         <input type="hidden" name="formid" value="ContactForm">
 
         <div class="input {{ $data['name.classname'] }} uk-margin">
-            <label>
                 <input type="text" name="name" placeholder="Как ваc зовут?*" value="{{ $data['name.value'] }}" class="uk-input">
-            </label>
-            {{--            <div class="uk-alert-danger" uk-alert>--}}
-{{--                <a class="uk-alert-close" uk-close></a>--}}
-{{--                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>--}}
-{{--            </div>--}}
 
             {!! $data['name.error'] !!}
         </div>
