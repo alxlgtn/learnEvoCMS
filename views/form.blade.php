@@ -1,7 +1,7 @@
 @extends('layouts.base')
 
 @section('content')
-    <h2>FormLister</h2>
+    <h2>FormLister!!!</h2>
 
     {!! $modx->runSnippet('FormLister', array(
         'formid' => 'ContactForm',
