@@ -35,37 +35,37 @@
     ));  !!}
 @endsection
 
-@push('scripts')
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script type="text/javascript">
-            $(document).on('submit', '#ajaxForm form', function (ev) {
-                const frm = $('#ajaxForm form');
-                $('#submit').prop("disabled", true);
-                $.ajax({
-                    type: 'post',
-                    dataType: "json",
-                    url: '{{ $modx->config['site_url'] }}feedbackajaxform',
-                    data: frm.serialize(),
-                    success: function (data) {
-                        $('#ajaxForm').empty();
-                        $('#ajaxForm').html(data.output);
-                    },
-                });
-                ev.preventDefault();
-            });
+{{--@push('scripts')--}}
+{{--        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>--}}
+{{--        <script type="text/javascript">--}}
+{{--            $(document).on('submit', '#ajaxForm form', function (ev) {--}}
+{{--                const frm = $('#ajaxForm form');--}}
+{{--                $('#submit').prop("disabled", true);--}}
+{{--                $.ajax({--}}
+{{--                    type: 'post',--}}
+{{--                    dataType: "json",--}}
+{{--                    url: '{{ $modx->config['site_url'] }}feedbackajaxform',--}}
+{{--                    data: frm.serialize(),--}}
+{{--                    success: function (data) {--}}
+{{--                        $('#ajaxForm').empty();--}}
+{{--                        $('#ajaxForm').html(data.output);--}}
+{{--                    },--}}
+{{--                });--}}
+{{--                ev.preventDefault();--}}
+{{--            });--}}
 
-            $(document).on('click', '#ask-us-us', function (ev) {
-                const frm = $('ajaxForm form');
-                $.ajax({
-                    type: 'post',
-                    url: '{{ $modx->config['site_url'] }}newform',
-                    data: frm.serialize(),
-                    success: function (data) {
-                        $('#ajaxForm').empty();
-                        $('#ajaxForm').html(data);
-                    }
-                });
-                ev.preventDefault();
-            })
-        </script>
-@endpush
+{{--            $(document).on('click', '#ask-us-us', function (ev) {--}}
+{{--                const frm = $('ajaxForm form');--}}
+{{--                $.ajax({--}}
+{{--                    type: 'post',--}}
+{{--                    url: '{{ $modx->config['site_url'] }}newform',--}}
+{{--                    data: frm.serialize(),--}}
+{{--                    success: function (data) {--}}
+{{--                        $('#ajaxForm').empty();--}}
+{{--                        $('#ajaxForm').html(data);--}}
+{{--                    }--}}
+{{--                });--}}
+{{--                ev.preventDefault();--}}
+{{--            })--}}
+{{--        </script>--}}
+{{--@endpush--}}

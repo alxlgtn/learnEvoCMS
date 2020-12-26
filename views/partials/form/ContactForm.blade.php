@@ -1,6 +1,7 @@
 {{--@if ( isset($FormLister) && $FormLister->getFormStatus())--}}
-{{--    <h2>Thenks</h2>--}}
-{{--@else--}}
+@if ($FormLister->getFormStatus())
+    <h2>Спасибо за заявку, мы вам перезвоним в ближайшее время!!!!</h2>
+@else
 
     <form method="post">
             <h3>Оставить отзыв</h3>
@@ -30,7 +31,7 @@
 
             <button class="btn" id="submit">Отправить</button>
     </form>
-{{--@endif--}}
+@endif
 
 
 {{--        <div class="input {{ $data['name.classname'] }}">--}}
